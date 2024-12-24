@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <footer className="bg-[#FAFCFF]">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
-        <div className="flex justify-center text-teal-600">
+        <div className="flex flex-col items-center justify-center text-teal-600">
+        <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
+Powered by</p>
         <img src={logo} alt="" className="w-48" />
         </div>
 
