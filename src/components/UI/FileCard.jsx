@@ -34,7 +34,7 @@ const FileCard = ({ file }) => { // Accept file as a prop
             </div>
           )}
           <p className='text-gray-800 font-semibold'>{file.name}</p> {/* Display file name */}
-          <p className='text-[#204780] text-sm font-semibold'>{file.fileCount} files</p> {/* Display number of files */}
+          <p className='text-[#204780] text-sm font-semibold'>{file.fileCount} mb</p> {/* Display number of files */}
         </div>
       </div>
       {isImage && <ImageModal isOpen={isModalOpen} onClose={handleCloseModal} imageSrc={file.src} />}

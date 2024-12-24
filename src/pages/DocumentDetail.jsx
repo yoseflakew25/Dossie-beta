@@ -14,7 +14,7 @@ const DocumentDetail = () => {
     type: 'image', // or 'pdf'
     src: 'https://www.letterofcredit.biz/wp-content/uploads/insurance-certificate-sample.gif',
     name: 'Results 2023',
-    fileCount: 25
+    fileCount: 24
   };
   
   // In your render method
