@@ -80,7 +80,7 @@ export default function About() {
               <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-primary opacity-75">
                 2
               </p>
-              <p className="text-lg font-bold leading-5">choose pricing options</p>
+              <p className="text-lg font-bold leading-5">choose recording options</p>
             </div>
             <p className="text-sm text-body-color">
               Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter
@@ -92,7 +92,7 @@ export default function About() {
               <p className="flex items-center justify-center w-10 h-10 mr-2 text-lg font-bold text-white rounded-full bg-primary opacity-75">
                 3
               </p>
-              <p className="text-lg font-bold leading-5">start accesing tenders</p>
+              <p className="text-lg font-bold leading-5">start accesing your documents</p>
             </div>
             <p className="text-sm text-body-color">
               A flower in my garden, a mystery in my panties. Heart attack never
