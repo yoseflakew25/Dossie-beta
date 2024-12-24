@@ -54,25 +54,25 @@ const DocumentDetail = () => {
 
 <div className=" flex flex-wrap justify-between py-4 px-8 rounded-md border bg-white">
  <p className="font-semibold">
-   <span className="font-bold text-blue-700">Document Name : </span>
-   {folderDetails?.folderName}
+   Document Name :    <span className="font-bold text-blue-700">{folderDetails?.folderName} </span>
+
  </p>
  <p className="font-semibold">
-   <span className="font-bold text-blue-700">Document Id : </span>
-   {folderDetails?.folderId}        </p>
+ Document Id : <span className="font-bold text-blue-700">  {folderDetails?.folderId}  </span>
+        </p>
    <p className="font-semibold">
-   <span className="font-bold text-blue-700">Category : </span>
-   {folderDetails?.category}        </p>
+   Category : <span className="font-bold text-blue-700"> {folderDetails?.category} </span>
+          </p>
  <p className="font-semibold">
-   <span className="font-bold text-blue-700">No of Files : </span>
-   {folderDetails?.noOfFiles}        </p>
+ No of Files : <span className="font-bold text-blue-700">  {folderDetails?.noOfFiles}</span>
+          </p>
  <p className="font-semibold">
   
   Date added :    <span className="font-bold text-blue-700">  {folderDetails?.dateAdded} </span>    </p>
 
    <p className="font-semibold">
-   <span className="font-bold text-blue-700">Last Updated : </span>
-   {folderDetails?.dateLastUpdated}        </p>
+   Last Updated : <span className="font-bold text-blue-700">{folderDetails?.dateLastUpdated} </span>
+          </p>
  </div>
 
 
