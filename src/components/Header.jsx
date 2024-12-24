@@ -1,6 +1,6 @@
 import { FaSearch } from "react-icons/fa";
 import { NavLink, useNavigate, useLocation } from "react-router-dom";
-// import logo from "../assets/logo.png";
+import logo from "../assets/logo.png";
 // import { useSelector } from "react-redux";
  import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -53,7 +53,8 @@ export default function Header() {
       <div className="flex items-center justify-between h-20 max-w-screen-xl mx-16">
         <div className="flex items-center gap-8">
           <NavLink to="/">
-           <h2 className="text-3xl font-bold text-primary opacity-75">Dossie</h2>
+
+           <img src={logo} alt="" className="w-48" />
           </NavLink>
           {/* <input type="text" placeholder="Search Tenders" className="input input-bordered w-full max-w-xs" /> */}
     

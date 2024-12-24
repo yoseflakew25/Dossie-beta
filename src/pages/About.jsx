@@ -1,6 +1,6 @@
 import React from 'react'
 import tempPic from "../assets/sec.png";
-import mePic from "../assets/mepic.jpg";
+
 import { Link } from 'react-router-dom';
 
 export default function About() {

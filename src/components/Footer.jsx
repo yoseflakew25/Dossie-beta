@@ -1,13 +1,14 @@
 import React from 'react'
 // import footerlogo from '../assets/footerlogo.jpg'
-// import logo from "../assets/logo.png";
+import logo from "../assets/logo.png";
+
 
 const Footer = () => {
   return (
     <footer className="bg-[#FAFCFF]">
       <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="flex justify-center text-teal-600">
-        <h2 className="text-3xl font-bold text-primary opacity-75">cheretaGate</h2>
+        <img src={logo} alt="" className="w-48" />
         </div>
 
         <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500">
@@ -20,7 +21,7 @@ const Footer = () => {
           <li>
             <a className="text-gray-700 transition hover:text-gray-700/75" href="/">
               {" "}
-              Tenders{" "}
+              Documents{" "}
             </a>
           </li>
 
