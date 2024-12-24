@@ -4,6 +4,8 @@ import Card from '../components/UI/FileCard'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { insuranceFolders } from '../data/data'
+import filee from '../assets/Sample_Insurance_Cert.pdf'
+
 
 const DocumentDetail = () => {
   const { id } = useParams()
@@ -15,6 +17,15 @@ const DocumentDetail = () => {
     src: 'https://www.letterofcredit.biz/wp-content/uploads/insurance-certificate-sample.gif',
     name: 'Results 2023',
     fileCount: 24
+  };
+  
+
+
+  const file2 = {
+    type: 'pdf',
+    src: [filee],
+    name: 'Sample PDF Document',
+    fileCount: 1
   };
   
   // In your render method
@@ -87,12 +98,12 @@ const DocumentDetail = () => {
         ) : (
           <>
             <Card file={file}/>
+            <Card file={file2}/>
             <Card file={file}/>
             <Card file={file}/>
+            <Card file={file2}/>
             <Card file={file}/>
-            <Card file={file}/>
-            <Card file={file}/>
-            <Card file={file}/>
+            <Card file={file2}/>
             <Card file={file}/>
             <Card file={file}/>
             
