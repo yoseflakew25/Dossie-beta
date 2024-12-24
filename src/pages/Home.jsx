@@ -15,7 +15,7 @@ const Home = () => {
       
       </div> */}
     <Hero/>
-    <BrandCloud/>
+    {/* <BrandCloud/> */}
     <Features/>
     <Features2/>
    

@@ -7,28 +7,29 @@ const Features = () => {
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
    
    <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-primary opacity-75 sm:text-4xl md:mx-auto">
-    Why use Dossie?
+   What This System Offers
    </h2>
    <p className="text-base text-body-color md:text-lg">
- Dossie aims to level the playing field so that businesses of any size can have easy and affordable and secure access to their documents.
+ this system aims to level the playing field so that businesses of any size can have easy and affordable and secure access to their documents.
    </p>
  </div>
       <div className="grid gap-4 grid-cols-1 lg:grid-cols-4">
         <Card
-          title="Coverage"
-          subtitle="We have comprehensive and reliable database of tender opportunities updated on a daily basis from all sectors around the country."
+          title="Digitized Records"
+          subtitle="Easily access your customers' digitized records, converted directly from paper files using advanced technology."
           href="#"
           Icon={FiCreditCard}
         />
-        <Card title="Cost Effective" 
-        subtitle="subscription fees include access to unlimited searching, downloading available documents or tender alerts at no hidden cost."
+        <Card title="Secure Access" 
+        subtitle=" A system built with robust security measures to ensure your data's confidentiality and integrity.
+"
  href="#" Icon={FiCreditCard} />
-        <Card title="Customer Support" 
-        subtitle="You can contact our customer care team via email, phone call or on our social media platforms to get assistance on tender/project, existing membership or any other queries/error faced by you."
+        <Card title="Simplified Search" 
+        subtitle=" Find customer information quickly and effortlessly through our intuitive search functionality."
  href="#" Icon={FiCreditCard} />
         <Card
-          title="Customized Services"
-          subtitle=" We customize email, SMS and Telegram alerts for our customers based on preferred categories and services to ensure that members only receive relevant information for their business."
+          title="Custom Integration"
+          subtitle=" Designed to fit the unique workflows and requirements of EIC."
           href="#"
           Icon={FiCreditCard}
         />

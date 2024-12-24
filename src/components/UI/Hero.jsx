@@ -11,13 +11,12 @@ const Hero = () => {
       <div className=" lg:p-16 rounded-[4rem] space-y-6 md:flex md:gap-6 justify-center md:space-y-0 lg:items-center">
         <div className="mx-8 md:7/12 lg:w-1/2">
           <h1 className="text-6xl font-bold text-primary opacity-75">
-          Fast & Convenient
-Document Access.
+          Welcome to EIC’s Digital Record Management System
+
           </h1>
           <p className="my-8 text-gray-600">
-            Nobis minus voluptatibus pariatur dignissimos libero quaerat iure
-            expedita at? Asperiores nemo possimus nesciunt dicta veniam
-            aspernatur quam mollitia.
+          This system is designed exclusively for the Ethiopian Insurance Corporation to provide a seamless, secure, and efficient way to access and manage customer records. With our tailored solution, EIC can streamline operations and deliver superior service to its clients.
+
           </p>
          <Link to="/documents">
          <button className="btn btn-primary opacity-75 opacity-75 px-12 text-white mr-4">Get Started</button>
