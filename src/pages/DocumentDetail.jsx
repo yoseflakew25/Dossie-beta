@@ -1,21 +1,25 @@
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import Card from '../components/UI/FileCard'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-
-// import TenderLists from '../components/TenderLists'
+import { insuranceFolders } from '../data/data'
 
 const DocumentDetail = () => {
+  const { id } = useParams()
   const [loading, setLoading] = useState(true)
+  const [folderDetails, setFolderDetails] = useState(null)
 
   useEffect(() => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
+      const folder = insuranceFolders.find(folder => folder.folderId === id)
+      setFolderDetails(folder)
       setLoading(false)
     }, 2000)
 
     return () => clearTimeout(timer)
-  }, [])
+  }, [id])
 
   return (
     <div>
@@ -30,31 +34,31 @@ const DocumentDetail = () => {
 <div className=" flex flex-wrap justify-between py-4 px-8 rounded-md border bg-white">
  <p className="font-semibold">
    <span className="font-bold text-blue-700">Document Name : </span>
-   hello
+   {folderDetails?.folderName}
  </p>
  <p className="font-semibold">
    <span className="font-bold text-blue-700">Document Id : </span>
-   hello        </p>
+   {folderDetails?.folderId}        </p>
    <p className="font-semibold">
    <span className="font-bold text-blue-700">Category : </span>
-   hello        </p>
+   {folderDetails?.category}        </p>
  <p className="font-semibold">
    <span className="font-bold text-blue-700">No of Files : </span>
-   hello        </p>
+   {folderDetails?.noOfFiles}        </p>
  <p className="font-semibold">
-   <span className="font-bold text-blue-700">Date added : </span>
-   hello        </p>
+  
+  Date added :    <span className="font-bold text-blue-700">  {folderDetails?.dateAdded} </span>    </p>
 
    <p className="font-semibold">
    <span className="font-bold text-blue-700">Last Updated : </span>
-   hello        </p>
+   {folderDetails?.dateLastUpdated}        </p>
  </div>
 
 
     </header>
     <h2 className=' px-16 mt-8 font-bold text-xl text-primary'>Files</h2>
 
-      <div className='grid grid-cols-4 px-8 py-4 gap-4'>
+    <div className='grid grid-cols-4 px-8 py-4 gap-4'>
         {loading ? (
           <>
             <Skeleton height={200} />
@@ -94,6 +98,7 @@ const DocumentDetail = () => {
                 Add More Files
               </button>
 </div>
+
 
      
      
