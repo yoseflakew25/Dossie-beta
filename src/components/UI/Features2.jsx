@@ -23,7 +23,7 @@ const Section4 = () => {
 
             </h2> 
             <p className="my-8 text-gray-600">
-            With our tailored solution, EIC can streamline operations and deliver superior service to its clients.            </p>
+            With our tailored solution, EIC can streamline operations and deliver superior service to its clients.              The system is designed with advanced security measures to protect sensitive data, ensuring that client information remains confidential and secure. </p>
 <Link to="/documents">
 <button className="btn btn-primary opacity-75 px-12 text-white mr-4">Get Started</button>
 </Link>
