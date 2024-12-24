@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
 
-const FileCard = () => {
+const FileCard = ({ file }) => { // Accept file as a prop
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const imageSrc = "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80";
+  const isImage = file.type === 'image'; // Check if the file is an image
+  const isPDF = file.type === 'pdf'; // Check if the file is a PDF
 
   const handleCardClick = () => {
     setIsModalOpen(true);
@@ -17,16 +18,26 @@ const FileCard = () => {
     <>
       <div className="card hover:scale-105 transition-transform duration-500 ease-out cursor-pointer" onClick={handleCardClick}>
         <div className="card-body">
-          <img
-            alt=""
-            src={imageSrc}
-            className="h-36 w-full object-cover"
-          />
-          <p className='text-gray-800 font-semibold'>Results 2023</p>
-          <p className='text-[#204780] text-sm font-semibold'>23 files</p>
+          {isImage ? (
+            <img
+              alt=""
+              src={file.src} // Use the src from the file prop
+              className="h-36 w-full object-cover"
+            />
+          ) : isPDF ? (
+            <div className="h-36 w-full flex items-center justify-center bg-gray-200">
+              <p className="text-gray-800 font-semibold">PDF Document</p>
+            </div>
+          ) : (
+            <div className="h-36 w-full flex items-center justify-center bg-gray-200">
+              <p className="text-gray-800 font-semibold">Unsupported File Type</p>
+            </div>
+          )}
+          <p className='text-gray-800 font-semibold'>{file.name}</p> {/* Display file name */}
+          <p className='text-[#204780] text-sm font-semibold'>{file.fileCount} files</p> {/* Display number of files */}
         </div>
       </div>
-      <ImageModal isOpen={isModalOpen} onClose={handleCloseModal} imageSrc={imageSrc} />
+      {isImage && <ImageModal isOpen={isModalOpen} onClose={handleCloseModal} imageSrc={file.src} />}
     </>
   );
 };

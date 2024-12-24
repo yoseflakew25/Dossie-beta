@@ -10,6 +10,16 @@ const DocumentDetail = () => {
   const [loading, setLoading] = useState(true)
   const [folderDetails, setFolderDetails] = useState(null)
 
+  const file = {
+    type: 'image', // or 'pdf'
+    src: 'https://www.letterofcredit.biz/wp-content/uploads/insurance-certificate-sample.gif',
+    name: 'Results 2023',
+    fileCount: 25
+  };
+  
+  // In your render method
+
+
   useEffect(() => {
     // Simulate a loading delay
     const timer = setTimeout(() => {
@@ -76,18 +86,16 @@ const DocumentDetail = () => {
           </>
         ) : (
           <>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            <Card file={file}/>
+            
           </>
         )}
       </div>
