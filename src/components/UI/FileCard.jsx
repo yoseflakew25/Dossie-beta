@@ -45,9 +45,9 @@ const FileCard = ({ file }) => {
               </p>
             </div>
           )}
-          <p className="text-gray-800 font-semibold">{file.name}</p>{" "}
+          <p className="text-gray-800 font-semibold hover:text-primary">{file.name}</p>{" "}
           {/* Display file name */}
-          <p className="text-[#204780] text-sm font-semibold">
+          <p className="text-[#204780] text-sm font-semibold ">
             {file.fileCount} mb
           </p>{" "}
           {/* Display number of files */}
